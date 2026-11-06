@@ -1,0 +1,57 @@
+1.What is speech recognition?Speech recognition is the process of converting spoken language into written text using computer algorithms or AI models.
+
+
+
+2.What is Automatic Speech Recognition (ASR)?ASR is a technology that automatically identifies spoken words from audio signals and converts them into text.
+
+
+
+3.What is real-time transcription?The conversion of spoken audio into text during or shortly after speech is captured.
+
+
+
+4.Which Python library is used in this experiment?SpeechRecognition is used for audio capture and access to speech recognition services.
+
+
+
+5.What is the purpose of PyAudio?PyAudio provides access to microphone audio input through Python.
+
+
+
+6.What does sr.Recognizer() do?It creates a recognizer object used to capture and recognize speech.
+
+
+
+7.What is the purpose of sr.Microphone()?It opens a microphone audio source so Python can record speech.
+
+
+
+8.What does recognize_google() do?It sends captured audio to Google's online speech recognition service and returns recognized text.
+
+
+
+9.Why do we adjust for ambient noise?To calibrate the recognizer's energy threshold so background noise is less likely to trigger speech detection.
+
+
+
+10.What is the difference between speech recognition and speech synthesis?Speech recognition converts audio into text, while speech synthesis converts text into spoken audio.
+
+
+
+11.What is the role of language='en-IN'?It requests English speech recognition using the Indian English locale.
+
+
+
+12.What is UnknownValueError?An exception raised when the recognition service cannot determine understandable text from the audio.
+
+
+
+13.What is RequestError?An exception indicating a problem accessing or receiving a response from the speech recognition service.
+
+
+
+14.Does this implementation require internet access?Yes. It uses Google's online recognition service, which processes captured audio remotely.
+
+
+
+15.What are applications of speech transcription?Meeting transcription, lecture notes, voice assistants, accessibility tools, and voice-controlled applications.
