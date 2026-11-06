@@ -1,0 +1,86 @@
+#This is illustrative expected output. It is not an actual execution log. Training losses and runtime depend on the machine and installed libraries.
+
+=============================================
+GENERATIVE AI LABORATORY - EXPERIMENT 3
+=============================================
+
+Experiment:
+MNIST Autoencoder Image Reconstruction
+
+Training Data Shape: (60000, 28, 28)
+Testing Data Shape: (10000, 28, 28)
+
+Flattened Training Shape: (60000, 784)
+Flattened Testing Shape: (10000, 784)
+
+---------------------------------------------
+AUTOENCODER ARCHITECTURE
+---------------------------------------------
+
+Input Layer: 784 Neurons
+
+Encoder Hidden Layer: 128 Neurons
+
+Latent Layer: 32 Neurons
+
+Decoder Hidden Layer: 128 Neurons
+
+Output Layer: 784 Neurons
+
+---------------------------------------------
+MODEL TRAINING
+---------------------------------------------
+
+Epochs: 10
+Batch Size: 256
+Optimizer: Adam
+Loss Function: Mean Squared Error
+
+Expected behavior:
+Training loss decreases across epochs.
+Validation loss generally decreases.
+The model learns to reconstruct digit shapes.
+
+---------------------------------------------
+MODEL EVALUATION
+---------------------------------------------
+
+Final Test Reconstruction Loss:
+Expected to be a small positive value.
+
+Exact value depends on training.
+
+---------------------------------------------
+IMAGE RECONSTRUCTION
+---------------------------------------------
+
+Original Images:
+MNIST handwritten digits
+
+Reconstructed Images:
+Approximate reconstructions of the same digits
+
+---------------------------------------------
+GENERATED FILES
+---------------------------------------------
+
+outputs/reconstructed_images.png
+outputs/training_loss.png
+models/mnist_autoencoder.keras
+
+---------------------------------------------
+RESULT
+---------------------------------------------
+
+Autoencoder architecture implemented.
+MNIST dataset preprocessed.
+Model trained using reconstruction loss.
+Test images reconstructed.
+Training graphs saved.
+Model saved successfully.
+
+Experiment 3 completed successfully!
+
+NOTE:
+This file contains illustrative expected output.
+Replace it with actual results after execution.
