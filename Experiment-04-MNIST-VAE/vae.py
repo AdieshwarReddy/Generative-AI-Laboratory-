@@ -524,3 +524,16 @@ print("models/vae_encoder.keras")
 print("models/vae_decoder.keras")
 
 print("\nExperiment 4 completed successfully!")
+
+/*  Important concepts used in the code
+Component	Purpose
+z_mean	Mean of the latent Gaussian distribution
+z_log_var	Logarithm of the latent variance
+Sampling	Implements the reparameterization trick
+tf.random.normal()	Generates Gaussian noise
+encoder	Converts images into latent distributions
+decoder	Converts latent vectors into images
+GradientTape()	Computes gradients during training
+binary_crossentropy	Measures reconstruction error
+kl_loss	Regularizes the latent distribution
+decoder.predict()	Generates images from latent vectors */
