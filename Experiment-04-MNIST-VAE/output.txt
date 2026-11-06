@@ -1,0 +1,102 @@
+
+============================================
+GENERATIVE AI LABORATORY - EXPERIMENT 4
+============================================
+
+Experiment:
+Variational Autoencoder on MNIST
+
+Training Data Shape: (60000, 28, 28)
+Testing Data Shape: (10000, 28, 28)
+
+--------------------------------------------
+MODEL ARCHITECTURE
+--------------------------------------------
+
+Encoder:
+Input Shape: (28, 28, 1)
+Flatten: 784
+Dense Layer: 256
+Latent Mean: 2
+Latent Log-Variance: 2
+Sampled Latent Vector: 2
+
+Decoder:
+Latent Input: 2
+Dense Layer: 256
+Output: 784
+Reconstructed Image: (28, 28, 1)
+
+--------------------------------------------
+TRAINING CONFIGURATION
+--------------------------------------------
+
+Epochs: 10
+Batch Size: 128
+Optimizer: Adam
+Learning Rate: 0.001
+
+Loss Functions:
+1. Binary Cross-Entropy
+2. KL Divergence
+
+--------------------------------------------
+ILLUSTRATIVE TRAINING RESULTS
+--------------------------------------------
+
+Epoch 1:
+Total Loss: 190.5
+Reconstruction Loss: 186.2
+KL Loss: 4.3
+
+Epoch 5:
+Total Loss: 157.8
+Reconstruction Loss: 151.9
+KL Loss: 5.9
+
+Epoch 10:
+Total Loss: 154.2
+Reconstruction Loss: 148.1
+KL Loss: 6.1
+
+Note:
+These are example values, not measured results.
+
+--------------------------------------------
+EXPECTED EVALUATION
+--------------------------------------------
+
+Final evaluation reports:
+total_loss
+reconstruction_loss
+kl_loss
+
+--------------------------------------------
+GENERATED FILES
+--------------------------------------------
+
+outputs/reconstructed_images.png
+outputs/generated_digits.png
+outputs/training_loss.png
+
+models/vae_encoder.keras
+models/vae_decoder.keras
+
+--------------------------------------------
+EXPECTED RESULT
+--------------------------------------------
+
+MNIST dataset loaded.
+VAE Encoder and Decoder implemented.
+Reparameterization trick applied.
+VAE trained using reconstruction and KL losses.
+Test images reconstructed.
+New digit-like images generated.
+Training graphs saved.
+Models saved.
+
+Experiment 4 completed successfully!
+
+NOTE:
+Replace this illustrative output with actual
+terminal results after executing the program.
