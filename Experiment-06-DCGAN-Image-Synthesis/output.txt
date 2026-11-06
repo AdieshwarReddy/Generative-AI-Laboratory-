@@ -1,0 +1,150 @@
+
+============================================
+GENERATIVE AI LABORATORY - EXPERIMENT 6
+============================================
+
+Experiment:
+DCGAN for Image Synthesis
+
+Original Dataset Shape:
+(60000, 28, 28)
+
+Processed Dataset Shape:
+(60000, 28, 28, 1)
+
+--------------------------------------------
+GENERATOR ARCHITECTURE
+--------------------------------------------
+
+Input Noise Dimension: 100
+
+Dense:
+7 × 7 × 256
+
+Reshape:
+(7, 7, 256)
+
+Conv2DTranspose 1:
+128 Filters
+
+Conv2DTranspose 2:
+64 Filters
+
+Conv2DTranspose 3:
+1 Filter
+
+Output Image Shape:
+(28, 28, 1)
+
+Output Activation:
+Tanh
+
+--------------------------------------------
+DISCRIMINATOR ARCHITECTURE
+--------------------------------------------
+
+Input Image:
+(28, 28, 1)
+
+Conv2D Layer 1:
+64 Filters
+
+Conv2D Layer 2:
+128 Filters
+
+Flatten Layer
+
+Dense Output:
+1 Logit
+
+--------------------------------------------
+TRAINING CONFIGURATION
+--------------------------------------------
+
+Epochs: 20
+Batch Size: 256
+Noise Dimension: 100
+
+Optimizer:
+Adam
+
+Learning Rate:
+0.0002
+
+Loss:
+Binary Cross-Entropy (from logits)
+
+--------------------------------------------
+ILLUSTRATIVE TRAINING RESULTS
+--------------------------------------------
+
+Epoch 01/20
+Generator Loss: 1.5000
+Discriminator Loss: 1.2000
+
+Epoch 05/20
+Generator Loss: 1.3000
+Discriminator Loss: 1.1000
+
+Epoch 10/20
+Generator Loss: 1.6000
+Discriminator Loss: 0.9000
+
+Epoch 20/20
+Generator Loss: 1.2000
+Discriminator Loss: 1.3000
+
+NOTE:
+These are illustrative values only.
+Actual results will vary.
+
+--------------------------------------------
+EXPECTED GENERATED IMAGES
+--------------------------------------------
+
+Epoch 1:
+Generated images may look noisy.
+
+Epoch 5:
+Some digit-like patterns may emerge.
+
+Epoch 10:
+More recognizable handwritten digits
+may appear.
+
+Epoch 20:
+Generated images may resemble MNIST digits.
+
+Quality depends on training conditions.
+
+--------------------------------------------
+GENERATED FILES
+--------------------------------------------
+
+outputs/generated_epoch_01.png
+outputs/generated_epoch_05.png
+outputs/generated_epoch_10.png
+outputs/generated_epoch_20.png
+outputs/generated_digits.png
+outputs/training_loss.png
+
+models/dcgan_generator.keras
+models/dcgan_discriminator.keras
+
+--------------------------------------------
+EXPECTED RESULT
+--------------------------------------------
+
+MNIST dataset loaded.
+DCGAN Generator created.
+DCGAN Discriminator created.
+Adversarial training performed.
+Synthetic images generated.
+Training losses visualized.
+Trained models saved.
+
+Experiment 6 completed successfully!
+
+NOTE:
+Replace illustrative output with actual
+terminal results after running the program.
