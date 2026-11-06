@@ -1,0 +1,37 @@
+Step 1 — Create the experiment files
+In GitHub, open your Generative-AI-Laboratory repository and select Add file → Create new file.
+
+Create these files inside Experiment-04-MNIST-VAE/ and paste the corresponding code.
+Step 2 — Set up Python
+On your computer, open the experiment folder in VS Code.
+
+Create a virtual environment:
+
+python -m venv .venv
+
+
+
+Activate it on Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+
+
+
+Step 3 — Install dependencies
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+
+
+Step 4 — Run the VAE
+
+python vae.py
+
+
+
+The first run downloads MNIST if it is not already cached. The model trains for 10 epochs and saves the generated images and model files.
+Step 5 — Verify results
+Check that the outputs/ directory contains all three PNG images. Open them to inspect reconstruction quality, generated digit images, and the training loss curves.
+
+The generated digits may look blurry or ambiguous after only 10 epochs. This is normal for a small VAE with a two-dimensional latent space.
