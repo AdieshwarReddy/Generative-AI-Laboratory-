@@ -209,7 +209,10 @@ models/mnist_autoencoder.keras
 
 ## Result
 
+
+
 A simple Autoencoder was implemented and trained on the MNIST dataset to reconstruct handwritten digit images.
+
 
 ## Conclusion
 
