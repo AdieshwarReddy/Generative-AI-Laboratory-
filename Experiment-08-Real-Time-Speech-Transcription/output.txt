@@ -1,0 +1,93 @@
+
+==================================================
+GENERATIVE AI LAB - EXPERIMENT 8
+REAL-TIME SPEECH TRANSCRIPTION
+==================================================
+
+Language: en-IN
+Recognition Engine: Google Web Speech
+
+Press Ctrl+C to stop transcription.
+
+Starting Speech Transcription...
+
+Microphone initialized.
+
+Adjusting for ambient noise...
+
+Microphone ready.
+
+Start speaking...
+
+--------------------------------------------------
+
+Listening...
+
+Recognizing speech...
+
+Recognized Text:
+hello everyone welcome to generative AI laboratory
+
+Timestamp: 2026-11-06 10:30:15
+
+Transcription saved successfully.
+
+--------------------------------------------------
+
+Listening...
+
+Recognizing speech...
+
+Recognized Text:
+today we are implementing speech to text conversion
+
+Timestamp: 2026-11-06 10:30:28
+
+Transcription saved successfully.
+
+--------------------------------------------------
+
+Listening...
+
+Recognizing speech...
+
+Recognized Text:
+artificial intelligence is transforming technology
+
+Timestamp: 2026-11-06 10:30:40
+
+Transcription saved successfully.
+
+--------------------------------------------------
+
+Listening...
+
+No speech detected. Listening again...
+
+--------------------------------------------------
+
+Transcription stopped by user.
+
+Generated Files:
+
+outputs/transcription.txt
+outputs/transcription_log.csv
+
+Experiment 8 execution finished!
+
+==================================================
+EXPECTED RESULT
+==================================================
+
+Microphone initialized.
+Speech captured.
+Audio processed.
+Speech converted into text.
+Recognized text displayed.
+Transcription saved in TXT format.
+Timestamped logs saved in CSV format.
+
+NOTE:
+This output is illustrative.
+Actual recognized text and timestamps
+depend on microphone input and execution.
