@@ -1,0 +1,57 @@
+1.What is DCGAN?A Deep Convolutional Generative Adversarial Network that uses convolutional neural networks for image generation.
+
+
+
+2.What is the difference between GAN and DCGAN?A basic GAN may use fully connected layers, while DCGAN uses convolutional and transposed convolutional layers to model spatial image structure.
+
+
+
+3.What are the two components of DCGAN?Generator and Discriminator.
+
+
+
+4.What is the role of the Generator?To convert random noise vectors into synthetic images.
+
+
+
+5.What is the role of the Discriminator?To distinguish real images from generated images.
+
+
+
+6.What is Conv2DTranspose?A transposed convolution layer commonly used to increase the spatial resolution of feature maps.
+
+
+
+7.What is Conv2D?A convolutional layer that extracts spatial features such as edges and shapes from images.
+
+
+
+8.Why is Batch Normalization used?It normalizes intermediate activations and can improve training stability.
+
+
+
+9.Why is LeakyReLU used?It allows a small gradient for negative inputs, reducing the risk of inactive neurons.
+
+
+
+10.Why is Tanh used in the Generator output?It produces values between −1 and 1, matching the normalized MNIST pixel range.
+
+
+
+11.Why does the Discriminator output a logit?The raw score is used with binary cross-entropy configured with from_logits=True.
+
+
+
+12.What is adversarial training?A process where the Generator learns to fool the Discriminator and the Discriminator learns to distinguish real from fake images.
+
+
+
+13.What is mode collapse?A GAN failure where the Generator produces a limited variety of outputs instead of diverse samples.
+
+
+
+14.What is the MNIST dataset?A dataset of 70,000 grayscale handwritten digit images of size 28 × 28 pixels.
+
+
+
+15.What are applications of DCGAN?Synthetic image generation, data augmentation, image synthesis, and generative AI research.
