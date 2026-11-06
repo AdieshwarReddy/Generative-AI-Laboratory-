@@ -1,0 +1,72 @@
+
+=============================================
+GENERATIVE AI LABORATORY - EXPERIMENT 7
+=============================================
+
+Experiment:
+Text-to-Image and Image-to-Text Conversion
+
+Selected Device: cuda
+
+---------------------------------------------
+TEXT-TO-IMAGE GENERATION
+---------------------------------------------
+
+Input Prompt:
+
+A beautiful futuristic city at sunset,
+cinematic lighting, detailed architecture
+
+Loading Stable Diffusion model...
+
+Generating image...
+
+Image saved:
+outputs/generated_image.png
+
+---------------------------------------------
+IMAGE-TO-TEXT CONVERSION
+---------------------------------------------
+
+Input Image:
+outputs/generated_image.png
+
+Loading BLIP model...
+
+Generating caption...
+
+Generated Caption:
+
+a futuristic city with tall buildings
+at sunset
+
+Caption saved:
+outputs/generated_caption.txt
+
+---------------------------------------------
+GENERATED FILES
+---------------------------------------------
+
+outputs/generated_image.png
+outputs/input_image.png
+outputs/generated_caption.txt
+
+---------------------------------------------
+EXPECTED RESULT
+---------------------------------------------
+
+Text prompt processed.
+Stable Diffusion model loaded.
+Synthetic image generated.
+BLIP captioning model loaded.
+Input image processed.
+Descriptive caption generated.
+Outputs saved successfully.
+
+Experiment 7 completed successfully!
+
+NOTE:
+This is illustrative output only.
+The actual caption may be different.
+The selected device may be CPU or CUDA.
+Replace this file with real execution output.
