@@ -1,0 +1,12 @@
+Code / Concept	Purpose
+StableDiffusionPipeline	Loads the text-to-image diffusion pipeline
+BlipProcessor	Preprocesses images and decodes generated text
+BlipForConditionalGeneration	Generates captions from images
+torch.cuda.is_available()	Checks whether CUDA GPU acceleration is available
+torch.float16	Reduces memory usage on compatible GPUs
+num_inference_steps=25	Sets the number of diffusion denoising steps
+guidance_scale=7.5	Controls classifier-free guidance strength
+manual_seed(42)	Makes random generation more reproducible under comparable conditions
+model.generate()	Generates caption tokens
+processor.decode()	Converts token IDs into readable text
+argparse	Supports command-line execution modes
