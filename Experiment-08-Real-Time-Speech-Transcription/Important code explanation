@@ -1,0 +1,14 @@
+
+Code / Concept	Purpose
+sr.Recognizer()	Creates the speech recognition object
+sr.Microphone()	Captures microphone input
+adjust_for_ambient_noise()	Calibrates the recognizer's energy threshold
+recognizer.listen()	Records a spoken phrase
+recognize_google()	Sends audio for online speech recognition
+language="en-IN"	Requests English recognition with an Indian locale
+timeout=5	Waits up to five seconds for speech to begin
+phrase_time_limit=10	Limits each captured phrase to approximately ten seconds
+UnknownValueError	Handles speech that could not be recognized
+RequestError	Handles recognition service failures
+csv.writer()	Saves timestamped transcription records
+KeyboardInterrupt	Stops the application when Ctrl+C is pressed
