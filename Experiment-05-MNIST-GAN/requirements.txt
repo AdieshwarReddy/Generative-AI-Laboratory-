@@ -1,0 +1,7 @@
+tensorflow>=2.16,<2.20
+numpy>=1.26,<2.0
+matplotlib>=3.8,<4.0
+
+
+
+Python 3.10 or 3.11 is recommended for this setup. Training is possible on a CPU, but a compatible GPU can substantially reduce training time.
