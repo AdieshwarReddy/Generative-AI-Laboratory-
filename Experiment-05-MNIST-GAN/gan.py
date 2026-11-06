@@ -467,3 +467,17 @@ print("models/gan_generator.keras")
 print("models/gan_discriminator.keras")
 
 print("\nExperiment 5 completed successfully!")
+
+/*Important code explanation
+Code / Concept	Purpose
+NOISE_DIM = 100	Defines the size of the Generator's random input
+tf.random.normal()	Generates random Gaussian noise
+Generator	Converts random noise into images
+Discriminator	Predicts whether an image is real or fake
+activation="tanh"	Produces generated pixels in the range −1 to 1
+activation="sigmoid"	Produces a real/fake probability
+BinaryCrossentropy()	Calculates adversarial classification losses
+GradientTape()	Records operations to compute gradients
+@tf.function	Compiles the training step into a TensorFlow graph
+apply_gradients()	Updates the network weights
+fixed_noise	Allows visual comparison of generated images across epochs */
