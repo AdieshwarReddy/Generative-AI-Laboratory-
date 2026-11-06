@@ -1,0 +1,145 @@
+
+=============================================
+GENERATIVE AI LABORATORY - EXPERIMENT 5
+=============================================
+
+Experiment:
+Basic Generative Adversarial Network on MNIST
+
+Original Dataset Shape:
+(60000, 28, 28)
+
+Processed Dataset Shape:
+(60000, 28, 28, 1)
+
+---------------------------------------------
+GENERATOR ARCHITECTURE
+---------------------------------------------
+
+Input Noise Dimension: 100
+
+Dense Layer 1: 256 Neurons
+Dense Layer 2: 512 Neurons
+Dense Layer 3: 1024 Neurons
+Output Layer: 784 Neurons
+
+Output Image Shape:
+(28, 28, 1)
+
+Activation:
+Tanh
+
+---------------------------------------------
+DISCRIMINATOR ARCHITECTURE
+---------------------------------------------
+
+Input Image:
+(28, 28, 1)
+
+Flatten Layer:
+784 Features
+
+Dense Layer 1:
+512 Neurons
+
+Dense Layer 2:
+256 Neurons
+
+Output Layer:
+1 Neuron
+
+Activation:
+Sigmoid
+
+---------------------------------------------
+TRAINING CONFIGURATION
+---------------------------------------------
+
+Epochs: 20
+Batch Size: 256
+Noise Dimension: 100
+
+Optimizer:
+Adam
+
+Learning Rate:
+0.0002
+
+Loss:
+Binary Cross-Entropy
+
+---------------------------------------------
+ILLUSTRATIVE TRAINING RESULTS
+---------------------------------------------
+
+Epoch 01/20
+Generator Loss: 1.5000
+Discriminator Loss: 0.9000
+
+Epoch 05/20
+Generator Loss: 1.8000
+Discriminator Loss: 0.7500
+
+Epoch 10/20
+Generator Loss: 1.4000
+Discriminator Loss: 0.9500
+
+Epoch 20/20
+Generator Loss: 1.2000
+Discriminator Loss: 1.1000
+
+NOTE:
+These numbers are illustrative only.
+Actual losses may differ significantly.
+GAN losses do not necessarily decrease
+monotonically.
+
+---------------------------------------------
+EXPECTED GENERATED IMAGES
+---------------------------------------------
+
+Epoch 1:
+Images may appear mostly noisy.
+
+Epoch 5:
+Some handwritten digit patterns may emerge.
+
+Epoch 10:
+More recognizable digit-like shapes may appear.
+
+Epoch 20:
+Some generated images may resemble MNIST digits.
+
+Image quality is not guaranteed.
+
+---------------------------------------------
+GENERATED FILES
+---------------------------------------------
+
+outputs/generated_epoch_01.png
+outputs/generated_epoch_05.png
+outputs/generated_epoch_10.png
+outputs/generated_epoch_20.png
+outputs/generated_digits.png
+outputs/training_loss.png
+
+models/gan_generator.keras
+models/gan_discriminator.keras
+
+---------------------------------------------
+EXPECTED RESULT
+---------------------------------------------
+
+MNIST dataset loaded.
+Generator network created.
+Discriminator network created.
+Adversarial training performed.
+Synthetic images generated.
+Training losses visualized.
+Trained models saved.
+
+Experiment 5 completed successfully!
+
+NOTE:
+Replace illustrative output with actual
+terminal results after executing the program.
