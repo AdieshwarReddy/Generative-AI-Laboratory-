@@ -1,0 +1,12 @@
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+
+# Trained model files can be large
+models/*.keras
+models/*.h5
