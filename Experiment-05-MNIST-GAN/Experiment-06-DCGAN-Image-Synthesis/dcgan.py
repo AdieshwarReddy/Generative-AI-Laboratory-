@@ -495,3 +495,16 @@ print("models/dcgan_generator.keras")
 print("models/dcgan_discriminator.keras")
 
 print("\nExperiment 6 completed successfully!")
+
+/* Important code explanation
+Code / Concept	Purpose
+Conv2DTranspose	Upsamples feature maps to generate images
+Conv2D	Extracts spatial features from images
+BatchNormalization	Normalizes intermediate activations and can stabilize training
+LeakyReLU	Allows a small gradient for negative inputs
+Dropout(0.3)	Regularizes the Discriminator
+activation="tanh"	Produces generated pixels in the range −1 to 1
+from_logits=True	Tells BCE that Discriminator outputs are raw logits
+GradientTape()	Computes gradients for both networks
+fixed_noise	Provides consistent samples for epoch comparisons
+save_generated_images()	Saves a grid of generated handwritten digits */
