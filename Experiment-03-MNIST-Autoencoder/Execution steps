@@ -1,0 +1,37 @@
+Step 1 — Create files on GitHub
+Inside your repository, create the folder Experiment-03-MNIST-Autoencoder and add all five files above.
+Step 2 — Run locally in VS Code
+Open a terminal in the experiment folder.
+
+Create and activate a virtual environment:
+
+python -m venv .venv
+
+
+
+Windows:
+
+.venv\Scripts\Activate.ps1
+
+
+
+Install dependencies:
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+
+
+Step 3 — Execute the Autoencoder
+
+python autoencoder.py
+
+
+
+On the first run, Keras downloads the MNIST dataset, so an internet connection is required. Training may take several minutes on a CPU.
+Step 4 — Verify outputs
+Check that the following files exist:
+- outputs/reconstructed_images.png
+- outputs/training_loss.png
+- models/mnist_autoencoder.keras
+Replace the illustrative output.txt with your actual terminal results after running the program.
