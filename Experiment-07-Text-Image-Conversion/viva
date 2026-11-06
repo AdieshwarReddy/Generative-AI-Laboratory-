@@ -1,0 +1,57 @@
+1.What is text-to-image generation?The process of generating an image from a natural language text description using an AI model.
+
+
+
+2.What is image-to-text conversion?The process of generating a textual description or caption from an input image.
+
+
+
+3.What is multimodal AI?Artificial intelligence that processes or generates information across multiple modalities such as text, images, audio, and video.
+
+
+
+4.Which model is used for text-to-image generation?Stable Diffusion v1.5, a pretrained latent diffusion model.
+
+
+
+5.Which model is used for image captioning?BLIP, which stands for Bootstrapping Language-Image Pre-training.
+
+
+
+6.What is Stable Diffusion?A latent diffusion model that generates images by progressively denoising latent representations conditioned on text.
+
+
+
+7.What is a diffusion model?A generative model that learns to reverse a noise-adding process to generate data.
+
+
+
+8.What is a text prompt?A natural language instruction or description provided to guide image generation.
+
+
+
+9.What is the purpose of a text encoder?To convert text into numerical representations that the generative model can use.
+
+
+
+10.What is image captioning?A vision-language task that generates natural language descriptions of images.
+
+
+
+11.What is the role of PyTorch?It provides tensor operations, neural network execution, and GPU acceleration for the pretrained models.
+
+
+
+12.What is the purpose of the Diffusers library?It provides implementations and pipelines for diffusion-based generative models.
+
+
+
+13.What does guidance scale control?It controls the strength of classifier-free guidance, affecting how closely image generation follows the text condition.
+
+
+
+14.What is the difference between text-to-image and image-to-text?Text-to-image generates visual content from text, while image-to-text generates language describing visual content.
+
+
+
+15.What are the applications of these models?AI art generation, accessibility, image description, content creation, visual storytelling, and multimodal assistants.
