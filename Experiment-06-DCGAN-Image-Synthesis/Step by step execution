@@ -1,0 +1,38 @@
+Step-by-step execution
+Step 1 — Create the experiment files
+Inside your GitHub repository, select Add file → Create new file and add the five files under:
+
+Experiment-06-DCGAN-Image-Synthesis/
+Step 2 — Set up Python
+Open the experiment folder in VS Code.
+
+Create a virtual environment:
+
+python -m venv .venv
+
+
+
+Activate it on Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+
+
+
+Step 3 — Install dependencies
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+
+
+Step 4 — Run the experiment
+
+python dcgan.py
+
+
+
+The first run downloads MNIST if it is not cached. The program trains the DCGAN for 20 epochs and saves generated images and model files.
+
+Training may be slow on a CPU. For a quick test, you can temporarily set EPOCHS = 1 and then restore EPOCHS = 20 for full training.
+
+Note: With EPOCHS = 1, only generated_epoch_01.png and the final output images will be created. The other epoch-specific images require their corresponding epochs.
