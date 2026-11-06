@@ -1,0 +1,46 @@
+#From your Experiment 2 folder, install dependencies and execute the program:
+
+
+python -m pip install -r requirements.txt
+python gmm.py
+
+
+viva questions and answers
+
+1.What is a Gaussian Mixture Model?A probabilistic model that represents data using a weighted combination of multiple Gaussian distributions.
+
+
+
+2.What is the EM algorithm?Expectation-Maximization is an iterative algorithm used to estimate model parameters when component assignments are unknown.
+
+
+
+3.What is the E-Step?It calculates the responsibility of each Gaussian component for each data point.
+
+
+
+4.What is the M-Step?It updates the means, variances, and mixture weights using the responsibilities.
+
+
+
+5.What are mixture weights?The probabilities associated with individual Gaussian components; together, they sum to 1.
+
+
+
+6.What is responsibility?The posterior probability that a particular component generated a given observation.
+
+
+
+7.Why use multiple Gaussian distributions?To represent data with multiple clusters or peaks that a single Gaussian cannot model well.
+
+
+
+8.What is log-likelihood?The sum of the logarithms of the model's probability densities evaluated at observed data points.
+
+
+
+9.What is the difference between GMM and K-Means?GMM gives probabilistic or soft cluster assignments, while K-Means gives hard cluster assignments.
+
+
+
+10.How is GMM used in Generative AI?A trained GMM can generate new data by selecting a component and sampling from its Gaussian distribution.
