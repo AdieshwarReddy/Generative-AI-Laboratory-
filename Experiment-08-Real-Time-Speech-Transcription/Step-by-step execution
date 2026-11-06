@@ -1,0 +1,48 @@
+Step 1 — Create the GitHub files
+Open your Generative-AI-Laboratory repository.
+
+Select Add file → Create new file and create the five files under:
+
+Experiment-08-Real-Time-Speech-Transcription/
+Step 2 — Set up Python
+Open the experiment folder in VS Code.
+
+Create a virtual environment:
+
+python -m venv .venv
+
+
+
+Activate it on Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+
+
+
+Step 3 — Install dependencies
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+
+
+Step 4 — Run the transcription service
+
+python speech_transcription.py
+
+
+
+Allow microphone access if your operating system requests permission.
+Step 5 — Speak into the microphone
+Try saying:
+Hello everyone, today we are implementing real-time speech transcription using Python.
+
+Wait for the application to recognize the phrase. It will display the text and save it to the output files.
+Step 6 — Stop transcription
+Press Ctrl+C in the terminal.
+
+The application will stop listening and display the paths of the generated transcription files.
+Step 7 — Verify the results
+Open the outputs/ folder.
+
+Check that transcription.txt contains the recognized phrases and transcription_log.csv contains the corresponding timestamps.
