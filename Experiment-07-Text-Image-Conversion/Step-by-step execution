@@ -1,0 +1,53 @@
+Step 1 — Create the GitHub files
+Open your Generative-AI-Laboratory repository.
+
+Select Add file → Create new file, and create each of the five files inside:
+
+Experiment-07-Text-Image-Conversion/
+Step 2 — Set up Python
+Open the experiment folder locally in VS Code.
+
+Create a virtual environment:
+
+python -m venv .venv
+
+
+
+Activate it on Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+
+
+
+Step 3 — Install dependencies
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+
+
+Step 4 — Run the experiment
+Option A — Run both tasks
+
+python text_image.py --mode both
+
+
+
+Option B — Generate an image only
+
+python text_image.py --mode text-to-image --prompt "A robot reading a book in a library"
+
+
+
+Option C — Generate a caption from an existing image
+
+python text_image.py --mode image-to-text --image sample.jpg
+
+
+
+
+For a quick lab demonstration on a computer without a GPU, Option C is the more practical starting point because BLIP captioning is substantially less demanding than Stable Diffusion image generation.
+Step 5 — Verify the results
+Open the outputs/ folder and check the generated files.
+
+For text-to-image, inspect generated_image.png. For image-to-text, open generated_caption.txt and compare the caption with the actual image.
