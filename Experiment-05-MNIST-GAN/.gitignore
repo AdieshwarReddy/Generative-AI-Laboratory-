@@ -1,0 +1,15 @@
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+
+# Trained models can be large
+models/*.keras
+models/*.h5
+
+
+This keeps large trained model files out of your GitHub repository while allowing you to commit the source code and generated images.
