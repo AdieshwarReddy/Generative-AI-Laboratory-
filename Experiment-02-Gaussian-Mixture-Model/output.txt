@@ -1,0 +1,56 @@
+#This is illustrative expected output, not an actual execution log. The numerical values below are approximate
+
+
+GENERATIVE AI LAB - EXPERIMENT 2
+
+Gaussian Mixture Model
+
+Estimated Means:
+[-2.0, 3.0]
+
+Estimated Variances:
+[1.0, 2.25]
+
+Mixture Weights:
+[0.5, 0.5]
+
+Final Log-Likelihood:
+Approximately -2300
+
+Graph saved as gmm_distribution.png
+
+Experiment 2 completed successfully!
+
+----------------------------------------
+EXPECTED GRAPH
+----------------------------------------
+
+Title:
+Gaussian Mixture Model from Scratch
+
+X-axis:
+Data Values
+
+Y-axis:
+Probability Density
+
+Blue Histogram:
+Generated Data
+
+Dashed Curves:
+Individual Gaussian Components
+
+Red Curve:
+Combined Gaussian Mixture Model
+
+----------------------------------------
+RESULT
+----------------------------------------
+
+Gaussian Mixture Model implemented.
+EM algorithm executed.
+Model parameters estimated.
+Distribution visualized.
+
+Note: Illustrative expected output.
+Actual numerical results may differ.
