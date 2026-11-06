@@ -1,0 +1,25 @@
+
+GENERATIVE AI LAB - EXPERIMENT 1
+
+Gaussian Distribution Sampling
+
+Mean: Approximately 0.0
+
+Standard Deviation: Approximately 1.0
+
+Graph generated successfully!
+
+Expected Graph:
+A bell-shaped Gaussian distribution.
+
+X-axis: Sample Values
+Y-axis: Probability Density
+
+Blue: Generated Gaussian Samples
+Red: Theoretical Gaussian PDF
+
+Result:
+Gaussian distribution sampling implemented successfully.
+
+Note: Illustrative expected output.
+Actual values may vary with the NumPy version.
