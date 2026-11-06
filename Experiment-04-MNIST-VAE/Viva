@@ -1,0 +1,59 @@
+15 important viva questions
+Hide all
+1.What is a Variational Autoencoder?A probabilistic generative model that learns a distribution over latent representations and uses sampled latent vectors to reconstruct or generate data.
+
+
+
+2.What are the main components of a VAE?Encoder, latent mean and log-variance, sampling layer, and Decoder.
+
+
+
+3.What is the difference between an Autoencoder and VAE?A traditional Autoencoder maps inputs to deterministic latent vectors, while a VAE learns latent probability distributions.
+
+
+
+4.What is latent space?A lower-dimensional space containing compressed representations of input data.
+
+
+
+5.What is the reparameterization trick?A technique that expresses sampling as z = μ + σ × ε, allowing gradients to flow through the model.
+
+
+
+6.Why do we use Gaussian distributions in VAEs?They provide a convenient continuous latent distribution that supports differentiable sampling and analytical KL divergence.
+
+
+
+7.What is KL divergence?A measure of how one probability distribution differs from another.
+
+
+
+8.Why is KL divergence used in a VAE?To encourage the encoded latent distributions to remain close to a chosen prior, usually the standard normal distribution.
+
+
+
+9.What is reconstruction loss?A measure of how different the reconstructed image is from the original input.
+
+
+
+10.What loss function is used in this experiment?The sum of binary cross-entropy reconstruction loss and KL divergence loss.
+
+
+
+11.What is the role of the Encoder?It predicts the mean and log-variance of the latent distribution for each input image.
+
+
+
+12.What is the role of the Decoder?It converts latent vectors into reconstructed or newly generated images.
+
+
+
+13.Why is sigmoid used in the output layer?It produces pixel values between 0 and 1, matching normalized MNIST images.
+
+
+
+14.Can a VAE generate new images?Yes. It can sample latent vectors from its prior distribution and decode them into new images.
+
+
+
+15.What are the applications of VAEs?Image generation, anomaly detection, representation learning, data augmentation, and probabilistic modeling.
