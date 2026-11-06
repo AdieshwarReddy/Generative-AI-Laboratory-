@@ -1,0 +1,57 @@
+1.What is a GAN?A Generative Adversarial Network is a generative model consisting of two competing neural networks: a Generator and a Discriminator.
+
+
+
+2.Who introduced GANs?Ian Goodfellow and colleagues introduced GANs in 2014.
+
+
+
+3.What are the two components of a GAN?Generator and Discriminator.
+
+
+
+4.What is the role of the Generator?To transform random noise into synthetic data resembling the training dataset.
+
+
+
+5.What is the role of the Discriminator?To distinguish real training images from generated images.
+
+
+
+6.What is adversarial training?A training process where the Generator tries to fool the Discriminator while the Discriminator learns to detect generated images.
+
+
+
+7.Why do we use random noise as input?It provides varying latent inputs that the Generator can transform into different synthetic images.
+
+
+
+8.Why is Tanh used in the Generator output?Tanh produces values between −1 and 1, matching the normalized MNIST pixel range.
+
+
+
+9.Why is Sigmoid used in the Discriminator output?Sigmoid produces a probability-like score between 0 and 1 for binary real/fake classification.
+
+
+
+10.What loss function is used in this experiment?Binary Cross-Entropy, with a non-saturating Generator objective.
+
+
+
+11.What is mode collapse?A GAN training failure where the Generator produces only a limited variety of outputs.
+
+
+
+12.Why is GAN training sometimes unstable?Because the Generator and Discriminator optimize competing objectives, and their relative learning progress can become unbalanced.
+
+
+
+13.What is the difference between GAN and VAE?A GAN learns through adversarial training, while a VAE learns a probabilistic latent representation using reconstruction and KL divergence losses.
+
+
+
+14.What is the MNIST dataset?A dataset of 70,000 grayscale handwritten digit images, each measuring 28 × 28 pixels.
+
+
+
+15.What are applications of GANs?Synthetic image generation, data augmentation, image synthesis, and generative modeling.
