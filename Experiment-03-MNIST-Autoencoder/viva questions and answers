@@ -1,0 +1,60 @@
+Viva questions and answers
+15 important viva questions
+
+1.What is an Autoencoder?An Autoencoder is a neural network trained to reconstruct its input data.
+
+
+
+2.What are the main components of an Autoencoder?Encoder, latent representation (bottleneck), and Decoder.
+
+
+
+3.What is an Encoder?The part of the neural network that converts input data into a compressed representation.
+
+
+
+4.What is a Decoder?The part that reconstructs input data from the latent representation.
+
+
+
+5.What is the MNIST dataset?A dataset containing 70,000 grayscale handwritten digit images, each of size 28 × 28 pixels.
+
+
+
+6.Why do we normalize MNIST images?To scale pixel values from 0–255 to 0–1, which helps neural network training.
+
+
+
+7.Why is the image flattened?To convert a 28 × 28 image into a vector of 784 values for fully connected Dense layers.
+
+
+
+8.What is the latent space?A lower-dimensional representation of the input learned by the Encoder.
+
+
+
+9.What is reconstruction loss?A measure of the difference between original input and reconstructed output.
+
+
+
+10.Which loss function is used?Mean Squared Error (MSE).
+
+
+
+11.Which optimizer is used?Adam, an adaptive gradient-based optimization algorithm.
+
+
+
+12.Why is sigmoid used in the output layer?It produces outputs between 0 and 1, matching normalized image pixels.
+
+
+
+13.What is the purpose of ReLU?It introduces nonlinearity, allowing the network to learn complex representations.
+
+
+
+14.What is the difference between an Autoencoder and a VAE?A standard Autoencoder learns a deterministic representation, while a VAE learns parameters of a latent probability distribution and samples from it.
+
+
+
+15.Can a basic Autoencoder generate new images?It reconstructs inputs directly. Generating meaningful new images from arbitrary latent samples is not guaranteed, unlike models designed for generative sampling
