@@ -1,0 +1,43 @@
+Step-by-step execution
+Step 1 — Create the experiment files
+Inside your Generative-AI-Laboratory GitHub repository, create:
+- Experiment-05-MNIST-GAN/README.md
+- Experiment-05-MNIST-GAN/gan.py
+- Experiment-05-MNIST-GAN/requirements.txt
+- Experiment-05-MNIST-GAN/output.txt
+- Experiment-05-MNIST-GAN/.gitignore
+Step 2 — Set up Python locally
+Open the experiment folder in VS Code.
+
+Create a virtual environment:
+
+python -m venv .venv
+
+
+
+Activate it in Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+
+
+
+Step 3 — Install dependencies
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+
+
+Step 4 — Execute the GAN
+
+python gan.py
+
+
+
+The program downloads MNIST on the first run if it is not cached, trains the Generator and Discriminator for 20 epochs, and saves generated images and training graphs.
+
+Training can be time-consuming on a CPU. For a quick initial check, temporarily set EPOCHS = 1 in gan.py. Restore EPOCHS = 20 for the full experiment.
+Step 5 — Verify results
+Open the outputs/ directory and check the generated digit grids and loss graph.
+
+If the images remain noisy, possible improvements include longer training, adjusting learning rates, or using a convolutional GAN architecture.
